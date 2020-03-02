@@ -1,5 +1,5 @@
+'use strict';
 
-test-1
 
 const name = 'Генератор защитного поля';
 let number = 1000;

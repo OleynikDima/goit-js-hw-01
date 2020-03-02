@@ -1,5 +1,5 @@
 // test -3
-
+'use strict';
 let message;
 
 const ADMIN_PASSWORD = 'jqueryismyjam';

@@ -1,5 +1,5 @@
 //test -2
-
+'use strict';
 const total = 100;
 const ordered = 20;
 let productQuantity; 

@@ -1,4 +1,5 @@
 
+'use strict';
 
 let cost;
 let input= prompt('Choise City')
@@ -21,7 +22,7 @@ if (input === null) {
   cost = 170;
   break;
 
-  case 'индия ': 
+  case 'индия': 
   cost = 80;
   break;
 
