@@ -1,22 +1,18 @@
-'use strict';
+'use script'
+  const checkForSpam = function(message) {
+        let lowMessage = message.toLowerCase();
+        let newMessage = lowMessage.split(/\b/);
+        for (let i = 0; i < newMessage.length; i ++){
+                if (newMessage[i] === 'spam' || newMessage[i] === 'sale')
+                return true;
+            }
+            return false;
+  };
 
-const checkForSpam = function(message) {
-  const newMessage2 = message.toLowerCase();
-  const newMessage = newMessage2.split(' ');
-  const a = 'spam';
-  const b = 'sale';
-
-  return newMessage.includes(a,b);
+  console.log(checkForSpam('Latest technology news')); // false
   
-};
-
-/*
-* Вызовы функции для проверки работоспособности твоей реализации.
-*/
-console.log(checkForSpam('Latest technology news')); // false
-
-console.log(checkForSpam('JavaScript weekly newsletter')); // false
-
-console.log(checkForSpam('Get best sale offers now!')); // true
-
-console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+  console.log(checkForSpam('JavaScript weekly newsletter')); // false
+  
+  console.log(checkForSpam('Get best sale offers now!')); // true
+  
+  console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
