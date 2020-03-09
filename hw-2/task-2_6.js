@@ -1,19 +1,23 @@
 'use script'
-let numbers = [];
-let totalNumber = 0;
+const numbers = [];
 let input;
+let total = 0;
+
 
 do {
-     input = prompt('введите любое число' );
-        if (Number.isNaN(Number(input))) {
-            alert('введите число');
-        }else {
-        totalNumber += Number(input);
+    input = prompt('введите любое число' );
+    if (Number.isNaN(Number(input))) {
+        alert('Было введено не число, попробуйте еще раз');
+    }else if (input === null){
+        break;
+    }else{
         numbers.push(Number(input));
-        
-        
     }
-} while (input !== null){
-    alert(`${totalNumber}`);
-    console.log(`${totalNumber}`, numbers); 
+    console.log(numbers);
+    
+}while (input !== null)
+    for (let i = 0; i < numbers.length; i ++){
+        total += numbers[i];
     }
+
+console.log(`Общая сумма чисел равна ${total}`);

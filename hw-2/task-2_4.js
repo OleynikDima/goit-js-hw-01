@@ -1,15 +1,11 @@
 'use strict';
 
 const formatString = function(string) {
-          let deleteString = string.slice(0, 40);
-            const newTriple = ['...'];
-            let allStrnig;
-                if(deleteString.length < string.length ){
-              allStrnig = deleteString.concat(newTriple);
+                if( string.length > 40 ){
+                  return string.slice(0,40)+'...';
                 } else {
-                  return deleteString;
+                  return string;
                 }
-                return allStrnig;
   };
   
 
