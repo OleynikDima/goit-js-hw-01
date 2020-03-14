@@ -5,19 +5,18 @@ const products = [
     { name: 'Захват', price: 1200, quantity: 2 },
   ];
   
+
+// пересчет массива 
+// присвоить переменною 
+
   const getAllPropValues = function(arr, prop) {
-          for (let i = 0; i < arr.length; i ++){
-                let a = Object.keys(arr[i]);
-                return a.name;
-            
-          }
-    
-    //   for (const a of arr){
-    //       return a[keys];
-    //   }
-    // //       if ( a === ){
-    //     }
-    //   }
+    let allMassiv = [];
+    // const emptyMassiv = [];
+    for (let i = 0; i < arr.length; i ++){
+        let a = arr[i][prop];
+        allMassiv.push(a);
+    }
+    return allMassiv;
   };
   
   /*
