@@ -1,6 +1,4 @@
 const findBestEmployee = function(employees) {
-    // const values = Object.values(employees);
-    // console.log(user);
     let maxTask = 0;
     let name;
     
