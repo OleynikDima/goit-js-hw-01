@@ -1,3 +1,4 @@
+'use script'
 const user = {
     name: 'Mango',
     age: 20,

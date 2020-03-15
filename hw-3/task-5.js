@@ -1,3 +1,5 @@
+'use script'
+
 const products = [
     { name: 'Радар', price: 1300, quantity: 4 },
     { name: 'Сканер', price: 2700, quantity: 3 },
@@ -13,8 +15,11 @@ const products = [
     let allMassiv = [];
     // const emptyMassiv = [];
     for (let i = 0; i < arr.length; i ++){
-        let a = arr[i][prop];
-        allMassiv.push(a);
+      let a = arr[i][prop];            
+      allMassiv.push(a);
+      if (a === undefined){
+        allMassiv.pop(a);
+      }
     }
     return allMassiv;
   };
