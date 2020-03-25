@@ -1,3 +1,5 @@
+'use script'
+
 const findBestEmployee = function(employees) {
     let maxTask = 0;
     let name;
