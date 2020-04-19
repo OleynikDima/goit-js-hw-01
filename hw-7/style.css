@@ -45,7 +45,8 @@ section {
 #counter,
 #ingredients,
 .container-form,
-.container-valid{
+.container-valid,
+#controls {
     box-shadow: -1px 0 6px -2px black;
     background-color: rgba(253, 253, 253, 0.966);
 }
@@ -130,4 +131,17 @@ section {
 .section-botton {
     width: 1000px;
     margin: 0 auto;
+}
+
+
+
+/*--------task-8-----///////////////////*/
+
+#controls {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
 }
