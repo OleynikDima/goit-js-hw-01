@@ -10,29 +10,15 @@ const ingredients = [
   ];
 
 
-
-
-
+  const getIngredients = document.getElementById('ingredients')
   const getItem = ingredients.map((el,ind,acc)=> {
-    const getIngredients = document.getElementById('ingredients')
     const item = document.createElement('li');
-    item.textContent = el  
-    getIngredients.append(item)
+    item.textContent = el
+    return item
   });
+  getIngredients.append(...getItem)
+  console.log(getIngredients);
+  
 
-  
-  
-  
-  
-// const getIngredients = document.getElementById('ingredients')  
-//     function createItem(itemLi){
-//         const  item = document.createElement('li');
-//         item.textContent = `${itemLi}`;
-//         return item;  
-//     }
-
-// }
-// getIngredients.append(createItem(ingredient))
-// console.log(getIngredients);
 
 
